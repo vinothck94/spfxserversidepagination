@@ -4,6 +4,7 @@ import { ICustomListProps } from "./ICustomListProps";
 import { escape } from "@microsoft/sp-lodash-subset";
 import { useState, useEffect } from "react";
 import CustomService from "../services/CustomService";
+import ICustomProperty from "../services/CustomService";
 
 import { sp } from "@pnp/sp/presets/all";
 
@@ -26,15 +27,17 @@ export default class CustomList extends React.Component<ICustomListProps, {}> {
   }
 
   async getList() {
-    var model = await this.customService.getlist(
-      this.props.context,
-      2,
-      100,
-      "ID,Title",
-      (res: any) => {
-        debugger;
-      }
-    );
+    let customProperty = {
+      context: this.props.context as any,
+      currentPage: 1,
+      recordsPerPage: 1000,
+      // properties: "ExcelLoop/Title,TaskType/TaskType",//optional
+      // filter: "TaskType/Title eq '1'",//optional
+      // expand: "TaskType",//optional
+    };
+    this.customService.getList(customProperty, (res: any) => {
+      debugger;
+    });
   }
 
   public render(): React.ReactElement<ICustomListProps> {
