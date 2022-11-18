@@ -1,0 +1,16 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "version": "1.15.2",
+    "libraryName": "sharepoint-server-side-pagination",
+    "libraryId": "14be319c-555d-4544-99d6-d4e0064d086d",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "sharepoint-server-side-pagination",
+    "solutionShortDescription": "sharepoint-server-side-pagination description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

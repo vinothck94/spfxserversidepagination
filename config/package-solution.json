@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "sharepoint-server-side-pagination-client-side-solution",
+    "id": "14be319c-555d-4544-99d6-d4e0064d086d",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.15.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "sharepoint-server-side-pagination description"
+      },
+      "longDescription": {
+        "default": "sharepoint-server-side-pagination description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "sharepoint-server-side-pagination Feature",
+        "description": "The feature that activates elements of the sharepoint-server-side-pagination solution.",
+        "id": "996862cb-e98e-4bbf-9238-a0e99edff94b",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/sharepoint-server-side-pagination.sppkg"
+  }
+}

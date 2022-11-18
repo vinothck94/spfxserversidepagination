@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "custom-list-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/customList/CustomListWebPart.js",
+          "manifest": "./src/webparts/customList/CustomListWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "CustomListWebPartStrings": "lib/webparts/customList/loc/{locale}.js"
+  }
+}
